@@ -4,12 +4,12 @@
     <!-- сздаем папку ссс стайл, линкаем css файл внутри тега хэд после тайтла -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First App</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <!-- headers -->
-    <h1>My first app</h1>
+    <h1 id="header">My first app</h1>
     <h2>Learning to code</h2>
     <h3>all over again</h3>
     <p>Web dev lesson 2</p>
@@ -22,22 +22,37 @@
      <!-- html tag is <input /> ввод next pur atributtes -->
       <!-- types of input: ="emai" ="password" ="text" ="number" -->
       <!-- padding это расстяние между кнтейнером и его внутренними элементами -->
-<div style="background-color: blueviolet; padding: 15px;">
+<div style="padding: 15px;">
     <input placeholder="Enter e-mail" type="email" />
     <input placeholder="Enter password" type="password" />
     <!-- after input need to add button Otpravit' -->
-     <button>Submit</button>
+    <button>Submit</button>
 </div>
 
     <!-- list of other elements -->
     <p>any text is here</p>
+
+    <!-- attribute draggable can be True or False -->
+    
+    <div draggable="true">
+        <p>DRAGGABLE CONTAINER</p>
+        <button>
+            <a href="www.google.com">Go To Google</a>
+        </button>
+    </div>
+
+    <div draggable="false">
+        <p> NOT DRAGGABLE CONTAINER</p>
+    </div>
     
     <div style="display: flex; flex-direction: column;">
-    <a href="https://www.solo-mahjong.ru/game/mahjong.html#game
-    target=_blank"
-    >Go to Mahjong game</a>
+        <!-- <a> has attributes href & target -->
+        <a 
+        href="https://www.solo-mahjong.ru/game/mahjong.html#game"
+        target="_blank"
+        >Go to Mahjong game</a>
 
-    <a href="/components/aboutme.html">About ME</a> <!-- into <a> canNOT be put any other element -->
+        <a href="/components/aboutme.html">About ME</a> <!-- into <a> canNOT be put any other element -->
         <a>
             <div>ANY OTHER  ELEMENT</div>
         </a>
@@ -61,14 +76,17 @@
     </ol>
 
     <!--  два текста будут рядом в рамке -->
-<div>
+<div class="container1">
 
     <!-- no atributte of element just use the name of element div in style.css -->
     <!-- лучше стили писать отдель в отдельной папке стайл сиэсэс -->
-    <p style="background-color: aqua; color: blueviolet;">Text 1</p>
-    <p class="par-red">Text2</p>
+    <p>Text 1</p>
+    <p>Text 2</p>
+    <p class="text3">Text 3</p>
     <!-- for class elem use . in style.css -->
 </div>
+
+<div class="other-text">Some other text</div>
 
 <table style="background-color: pink; ">
     <thead style="border: 1px solid black;">
@@ -108,7 +126,7 @@
     </tbody>
 </table>
 
-<div id="container1">
+<div class="container1">
     <!-- for id use # in style.css -->
     <p>Text3</p>
     <p>Text4</p>

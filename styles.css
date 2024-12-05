@@ -1,19 +1,48 @@
+
+/* css selector by html tag name */
 div {
     display: flex;
+    background-color: yellowgreen;
 }
 
+/* selector type - class use (.) */
 .par-red {
     color:red;
 }
 
-#container1 {
+/* css selector by class name */
+.container1 {
     display: flex;
-    width: 80px;
+    width: 150px;
     height: 80px;
     background-color: blue;
     color:tomato;
+    margin: 10px; /* margin пространство вокруг элемента */
+    padding: 50px; /* padding пространств внутри элемента,текст от границ отойдет на 50px */
 }
 
 table, th, td {
     border: 1px solid black;
+}
+
+/* css selector by id name (#) */
+/* can also put one more element with (,) */
+#header, .other-text {
+    color: purple;
+}
+
+/* можно поменять стили еще и к элементам в зависимости и от названия их атрибутов */
+div[draggable] {
+    background-color: yellow;
+    color: tomato;
+}
+
+/* css selector NESTING by parent-child */
+div[draggable="true"] p {
+    background-color: bisque;
+    color: blue;
+}
+
+div[draggable="true"] button a {
+    color: green;
 }
