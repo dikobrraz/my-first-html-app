@@ -13,3 +13,7 @@ div {
     background-color: blue;
     color:tomato;
 }
+
+table, th, td {
+    border: 1px solid black;
+}

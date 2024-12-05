@@ -11,12 +11,14 @@
     <!-- headers -->
     <h1>hello</h1>
     <h2>world</h2>
+    <p>Web dev lesson 2</p>
+    <p>4 December 2024</p>
 
     <!-- input html elements елемнт для залогиниться -->
      <!-- html tag is <input /> ввод next pur atributtes -->
       <!-- types of input: ="emai" ="password" ="text" ="number" -->
       <!-- padding это расстяние между кнтейнером и его внутренними элементами -->
-<div style="background-color: blueviolet; padding: 30px;">
+<div style="background-color: blueviolet; padding: 15px;">
     <input placeholder="Enter e-mail" type="email" />
     <input placeholder="Enter password" type="password" />
     <!-- after input need to add button Otpravit' -->
@@ -25,18 +27,82 @@
 
     <!-- list of other elements -->
     <p>any text is here</p>
-    <a href="https://chatgpt.com/
+    
+    <div style="display: flex; flex-direction: column;">
+    <a href="https://www.solo-mahjong.ru/game/mahjong.html#game
     target=_blank"
-    >ssylka Click me with atributes</a>
+    >Go to Mahjong game</a>
+
+    <a href="/components/aboutme.html">About ME</a> <!-- into <a> canNOT be put any other element -->
+        <a>
+            <div>ANY OTHER  ELEMENT</div>
+        </a>
+    </div>
+
+    <!-- <ol> ordered list-1. 2. 3. ... -->
+        <!-- <ul> Unordered list- bullet points -->
+            <!-- elements inside <li> -->
+
+    <p>Things to do TODAY</p>
+    <ul>
+        <li>Web dev lesson 2</li>
+        <li>Take a shower</li>
+        <li>Make a cake</li>
+    </ul>
+
+    <ol>
+        <li><!-- into <li> could be put any other element -->
+            <img src="space.jpg"/>
+        </li>
+    </ol>
 
     <!--  два текста будут рядом в рамке -->
 <div>
+
     <!-- no atributte of element just use the name of element div in style.css -->
     <!-- лучше стили писать отдель в отдельной папке стайл сиэсэс -->
     <p style="background-color: aqua; color: blueviolet;">Text 1</p>
     <p class="par-red">Text2</p>
     <!-- for class elem use . in style.css -->
 </div>
+
+<table style="background-color: pink; ">
+    <thead style="border: 1px solid black;">
+        <tr>
+            <!-- into <td> could be put any other element -->
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+
+    <tbody> <!-- <tbody> is not neccessary -->
+        <tr>
+            <!-- into <td> could be put any other element -->
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 2</td>
+        </tr>
+    </tbody>
+    
+    <tbody>
+        <tr>
+            <td>
+                Row 1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Row 2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Row 3
+            </td>
+        </tr> <!-- почему ROW показывает сверху? -->
+    </tbody>
+</table>
 
 <div id="container1">
     <!-- for id use # in style.css -->
@@ -45,7 +111,7 @@
 </div>
 
 <!-- html how to add image na stranitsu -->
- <img src="https://static.sobaka.ru/uploads/nsk/1.jpg" alt="territoria"/>
+ <img src="https://static.sobaka.ru/uploads/nsk/1.jpg" alt="Picture of a cat"/>
  <img src="space.jpg" alt="Picture of Space"/>
 
  <!-- добавляем видео -->
