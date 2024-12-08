@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- сздаем папку ссс стайл, линкаем css файл внутри тега хэд после тайтла -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First App</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- headers -->
     <h1 id="header">My first app</h1>
     <h2>Learning to code</h2>
@@ -16,130 +16,129 @@
     <p>4 December 2024</p>
     <p>Web dev lesson 3</p>
     <p>Should change the header to My Third app</p>
-    
 
     <!-- input html elements елемнт для залогиниться -->
-     <!-- html tag is <input /> ввод next pur atributtes -->
-      <!-- types of input: ="emai" ="password" ="text" ="number" -->
-      <!-- padding это расстяние между кнтейнером и его внутренними элементами -->
-<div style="padding: 15px;">
-    <input placeholder="Enter e-mail" type="email" />
-    <input placeholder="Enter password" type="password" />
-    <!-- after input need to add button Otpravit' -->
-    <button>Submit</button>
-</div>
+    <!-- html tag is <input /> ввод next pur atributtes -->
+    <!-- types of input: ="emai" ="password" ="text" ="number" -->
+    <!-- padding это расстяние между кнтейнером и его внутренними элементами -->
+    <div style="padding: 15px">
+      <input placeholder="Enter e-mail" type="email" />
+      <input placeholder="Enter password" type="password" />
+      <!-- after input need to add button Otpravit' -->
+      <button>Submit</button>
+    </div>
 
     <!-- list of other elements -->
     <p>any text is here</p>
 
     <!-- attribute draggable can be True or False -->
-    
+
     <div draggable="true">
-        <p>DRAGGABLE CONTAINER</p>
-        <button>
-            <a href="www.google.com">Go To Google</a>
-        </button>
+      <p>DRAGGABLE CONTAINER</p>
+      <button>
+        <a href="https://www.google.com">Go To Google</a>
+      </button>
     </div>
 
     <div draggable="false">
-        <p> NOT DRAGGABLE CONTAINER</p>
+      <p>NOT DRAGGABLE CONTAINER</p>
     </div>
-    
-    <div style="display: flex; flex-direction: column;">
-        <!-- <a> has attributes href & target -->
-        <a 
+
+    <div style="display: flex; flex-direction: column">
+      <!-- <a> has attributes href & target -->
+      <a
         href="https://www.solo-mahjong.ru/game/mahjong.html#game"
         target="_blank"
-        >Go to Mahjong game</a>
+        >Go to Mahjong game</a
+      >
 
-        <a href="/components/aboutme.html">About ME</a> <!-- into <a> canNOT be put any other element -->
-        <a>
-            <div>ANY OTHER  ELEMENT</div>
-        </a>
+      <a href="./components/aboutme.html">About ME</a>
+      <!-- into <a> canNOT be put any other element -->
+      <a>
+        <div>ANY OTHER ELEMENT</div>
+      </a>
     </div>
 
     <!-- <ol> ordered list-1. 2. 3. ... -->
-        <!-- <ul> Unordered list- bullet points -->
-            <!-- elements inside <li> -->
+    <!-- <ul> Unordered list- bullet points -->
+    <!-- elements inside <li> -->
 
     <p>Things to do TODAY</p>
     <ul>
-        <li>Web dev lesson 2</li>
-        <li>Take a shower</li>
-        <li>Make a cake</li>
+      <li>Web dev lesson 2</li>
+      <li>Take a shower</li>
+      <li>Make a cake</li>
     </ul>
 
     <ol>
-        <li><!-- into <li> could be put any other element -->
-            <img src="space.jpg"/>
-        </li>
+      <li>
+        <!-- into <li> could be put any other element -->
+        <img src="space.jpg" />
+      </li>
     </ol>
 
     <!--  два текста будут рядом в рамке -->
-<div class="container1">
+    <div class="container1">
+      <!-- no atributte of element just use the name of element div in style.css -->
+      <!-- лучше стили писать отдель в отдельной папке стайл сиэсэс -->
+      <p>Text 1</p>
+      <p>Text 2</p>
+      <p class="text3">Text 3</p>
+      <!-- for class elem use . in style.css -->
+    </div>
 
-    <!-- no atributte of element just use the name of element div in style.css -->
-    <!-- лучше стили писать отдель в отдельной папке стайл сиэсэс -->
-    <p>Text 1</p>
-    <p>Text 2</p>
-    <p class="text3">Text 3</p>
-    <!-- for class elem use . in style.css -->
-</div>
+    <div class="other-text">Some other text</div>
 
-<div class="other-text">Some other text</div>
-
-<table style="background-color: pink; ">
-    <thead style="border: 1px solid black;">
+    <table style="background-color: pink">
+      <thead style="border: 1px solid black">
         <tr>
-            <!-- into <td> could be put any other element -->
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 2</th>
+          <!-- into <td> could be put any other element -->
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 2</th>
         </tr>
-    </thead>
+      </thead>
 
-    <tbody> <!-- <tbody> is not neccessary -->
+      <tbody>
+        <!-- <tbody> is not neccessary -->
         <tr>
-            <!-- into <td> could be put any other element -->
-            <td>Column 1</td>
-            <td>Column 2</td>
-            <td>Column 2</td>
+          <!-- into <td> could be put any other element -->
+          <td>Column 1</td>
+          <td>Column 2</td>
+          <td>Column 2</td>
         </tr>
-    </tbody>
-    
-    <tbody>
+      </tbody>
+
+      <tbody>
         <tr>
-            <td>
-                Row 1
-            </td>
+          <td>Row 1</td>
         </tr>
         <tr>
-            <td>
-                Row 2
-            </td>
+          <td>Row 2</td>
         </tr>
         <tr>
-            <td>
-                Row 3
-            </td>
-        </tr> <!-- почему ROW показывает сверху? -->
-    </tbody>
-</table>
+          <td>Row 3</td>
+        </tr>
+        <!-- почему ROW показывает сверху? -->
+      </tbody>
+    </table>
 
-<div class="container1">
-    <!-- for id use # in style.css -->
-    <p>Text3</p>
-    <p>Text4</p>
-</div>
+    <div class="container1">
+      <!-- for id use # in style.css -->
+      <p>Text3</p>
+      <p>Text4</p>
+    </div>
 
-<!-- html how to add image na stranitsu -->
- <img src="https://static.sobaka.ru/uploads/nsk/1.jpg" alt="Picture of a cat"/>
- <img src="space.jpg" alt="Picture of Space"/>
+    <!-- html how to add image na stranitsu -->
+    <img
+      src="https://static.sobaka.ru/uploads/nsk/1.jpg"
+      alt="Picture of a cat"
+    />
+    <img src="space.jpg" alt="Picture of Space" />
 
- <!-- добавляем видео -->
-  <video width="400" controls>
-    <source src="video.mp4" type="video/mp4" />
-  </video>
-
-</body>
-</html> 
+    <!-- добавляем видео -->
+    <video width="400" controls>
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
